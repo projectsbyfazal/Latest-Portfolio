@@ -2,7 +2,7 @@ import React from 'react'
 import "./HireMe.css"
 import Container from '../Container'
 import Heading from '../Common/Heading'
-import MyImage from "../../assets/Images/yasir_khan.png"
+import MyImage from "../../assets/Images/yasir-khan.png"
 import { FaDownload } from 'react-icons/fa'
 import { useThemeContext } from '../../AppContext'
 import { calculateExp } from '../Hero/Hero'
@@ -55,8 +55,8 @@ const HireMe = () => {
 
             <div id='about' className='row justify-content-around align-items-center py-md-5'>
                 <div className="col-md-4">
-                    <div className={`hire-image ${isDarkMode && 'bg-lightdark-orange'}`}>
-                        <img src={MyImage} className='img-fluid' alt="" />
+                    <div className={`hire-image position-relative ${isDarkMode && 'bg-lightdark-orange'}`}>
+                        <img src={MyImage} className='img-fluid position-absolute left-0 bottom-0' alt="" />
                     </div>
                 </div>
                 <div className="col-md-6">
