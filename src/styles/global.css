@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #ffb800;
+  --secondary-color: #ffffff;
+  --font-size-base: 16px;
+  --font-family-base: "Roboto", sans-serif;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+}
+
+.container-box {
+  padding: 0 80px;
+  width: 100%;
+}
+
+.main-heading {
+  font-size: 45px;
+  font-weight: 600;
+  .orange {
+    color: #f57920;
+  }
+}
+
+.container-box.bg-blurred {
+  backdrop-filter: blur(40px);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.paragraph {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0em;
+  color: var(--secondary-color);
+}
+.heading1 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 90%;
+  text-transform: capitalize;
+}
+.heading2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2em;
+  text-transform: capitalize;
+}
+.heading3 {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.text-primary-color {
+  color: var(--primary-color);
+}
+.text-secondary-color {
+  color: var(--secondary-color);
+}
+
+.content-sections {
+  width: 600px;
+}
+
+@media (width<=768px) {
+  .container-box {
+    padding: 0 20px;
+  }
+  .heading1 {
+    font-size: 50px;
+    letter-spacing: -0.02em;
+  }
+  .heading2 {
+    font-size: 34px;
+    letter-spacing: -0.01em;
+  }
+  .heading3 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 100%;
+  }
+}
+
+.button{
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #f57920;
+  border: none;
+}
+.button:hover{
+  background-color: #feb273;
+}
+/* -======================================== */
+.swiper {
+  width: 100%;
+  .swiper-pagination-bullet {
+    background-color: #f57920;
+  }
+}
+
+.swiper-slide {
+  pointer-events: auto;
+  padding-bottom: 60px;
+}
+
+.swiper-slide > div {
+  height: 100%;
+}
+
+/* Swiper slide itself should NOT capture hover */
+.services-swiper .swiper-slide {
+  pointer-events: none;
+}
+
+/* Your actual card SHOULD capture hover */
+.services-swiper .swiper-slide .service-card {
+  pointer-events: auto;
+  width: 100%;
+}
+
+
+/* Dark Mode Colors */
+.bg-lightdark-orange{
+  background-color: #8f511f !important;
+}

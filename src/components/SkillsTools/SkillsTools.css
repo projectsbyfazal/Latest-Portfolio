@@ -1,0 +1,140 @@
+/* .skill-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  > div {
+    border-radius: 50px;
+    padding: 8px 25px;
+    background-color: #f2f4f7;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 0.6px;
+    position: relative;
+    overflow: hidden;
+  }
+  > div::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: all 0.4s;
+    background-color: #f57920;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  > div:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    z-index: -1;
+  }
+  > div:hover {
+    color: #fff;
+  }
+} */
+
+.skill-box{
+  background-image: linear-gradient(#fcf1e682, #fcf1e682), url("../../assets//Images/pattern-hatch-grey.jpg");
+}
+.skill-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  > div {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    padding: 5px 20px;
+    border: 1px solid #ecc093;
+    background-color: #fff;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    transition: color 0.25s ease;
+    z-index: 0;
+
+    /* smooth fill layer */
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: #f57920;
+      width: 100%;
+      height: 100%;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: all 0.4s;
+      /* transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1); */
+      z-index: -1;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:hover::before {
+      transform: scaleY(1);
+    }
+  }
+}
+
+.tools-container {
+  /* display: flex; */
+  background-color: #272727;
+  /* gap: 60px;
+    overflow: auto; */
+  padding: 40px 0;
+  text-transform: uppercase;
+  color: #fff;
+  user-select: none;
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+}
+
+.marquee-swiper {
+  overflow: hidden;
+
+  .swiper-slide {
+    padding-bottom: 0px;
+  }
+  .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+}
+
+.marquee-item {
+  white-space: nowrap;
+  font-size: 24px;
+  padding: 10px 30px;
+}
+
+/* Dark Mode */
+.bg-dark-skill-box{
+  background-image: linear-gradient(#111, #111), url("../../assets//Images/pattern-hatch-grey.jpg");
+
+  .skill-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  > div {
+    color: #dad7d5;
+    border: 1px solid #8a6549;
+    background-color: #272727;
+  }
+}
+}
+

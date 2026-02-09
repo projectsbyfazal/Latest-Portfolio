@@ -1,0 +1,72 @@
+.contact-section {
+  background-image: linear-gradient(#fcf1e69a, #fcf1e69a),
+    url("../../assets//Images/pattern-hatch-grey.jpg");
+
+  .contact-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    border: 1px solid #f3e2d7;
+    background-color: #fff;
+    padding: 8px;
+
+    .envelope {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      background-color: #ffead5;
+      border-radius: 50%;
+      font-size: 20px;
+      color: #f57920;
+    }
+
+    .input {
+      flex: 1;
+      height: 50px;
+      input {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        font-size: 18px;
+        color: #333;
+        letter-spacing: 0.5px;
+      }
+    }
+    button {
+      height: 50px;
+      padding: 10px 30px;
+      border-radius: 50px;
+      border: none;
+      font-weight: 500;
+      color: #fff;
+      background-color: #f57920;
+      &:hover {
+        background-color: #feb273;
+      }
+    }
+  }
+
+  .bg-dark-contact-input {
+    background-color: #272727;
+    border: 1px solid #474747;
+    .input input {
+      background-color: #272727;
+      color: #fff;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* Dark Mode */
+.bg-dark-contact-section {
+  background-image: linear-gradient(#111, #111),
+    url("../../assets//Images/pattern-hatch-grey.jpg");
+}

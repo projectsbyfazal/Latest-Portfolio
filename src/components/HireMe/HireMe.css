@@ -1,0 +1,72 @@
+.hire-section {
+  background-color: #f2f4f7;
+  background-image: linear-gradient(#f2f4f76c, #f2f4f760),
+    url("https://quomodosoft.com/html/glint/assets/img/bg/world-map.svg");
+  background-size: cover;
+  background-position: center;
+  .hire-image {
+    background-color: #feb273;
+    border-radius: 30px;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* work-experience */
+  .experience {
+    border-bottom: 1px solid #ccc7c7;
+  }
+  .work-experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work-experience div {
+    padding-bottom: 40px;
+  }
+  .work-experience div:first-child {
+    padding-right: 100px;
+    border-right: 1px solid #ccc7c7;
+    position: relative;
+    /* padding-bottom: 50px; */
+  }
+  .work-experience div:last-child {
+    padding-left: 100px;
+    position: relative;
+    /* padding-bottom: 50px; */
+  }
+
+  .work-experience div:first-child::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 6px solid #f57920;
+    border-radius: 50px;
+    background-color: #feb273;
+    outline: 3px dashed #777;
+    display: inline-block;
+    position: absolute;
+    right: -15px;
+    top: 0px;
+  }
+
+  .work-experience:last-child div:last-child::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 6px solid #f57920;
+    border-radius: 50px;
+    background-color: #feb273;
+    outline: 3px dashed #777;
+    display: inline-block;
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+  }
+}
+
+/* Dark Mode */
+.bg-dark-hire-section {
+  background-image: radial-gradient(#212529, #212529, #212529),
+    url("https://quomodosoft.com/html/glint/assets/img/bg/world-map.svg");
+}

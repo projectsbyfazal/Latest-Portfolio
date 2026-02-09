@@ -1,0 +1,114 @@
+.portfolio-section {
+  background-color: #fff;
+
+  .p-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+    .p-tab-item {
+      padding: 5px 20px;
+      border-radius: 50px;
+      font-weight: 500;
+      user-select: none;
+    }
+    .p-tab-item:hover {
+      background-color: #fcf1e6;
+    }
+    .p-tab-item.active {
+      background-color: #f57920 !important;
+      color: #fff;
+      font-weight: 600;
+    }
+    /* Dark Mode */
+    .dark-p-tab-item{
+      color: #fff;
+    }
+    .dark-p-tab-item:hover {
+      background-color: #313131;
+    }
+  }
+
+  .p-cards {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+
+    .p-card {
+      background-color: #fff;
+      height: 250px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .content {
+        position: absolute;
+        width: 96%;
+        bottom: 3%;
+        left: 2%;
+        /* background-color: #0000008c; */
+        backdrop-filter: blur(8px);
+        background-color: #000000a7;
+        transition: all 0.3s;
+        color: #fff;
+        padding: 15px;
+        /* backdrop-filter: blur(4px); */
+        border-radius: 20px;
+
+        h4 {
+          font-size: 30px;
+          font-weight: 700;
+        }
+        p {
+          font-size: 14px;
+          display: none;
+        }
+      }
+
+      .p-link {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        font-size: 20px;
+        color: #f57920;
+        border: 1px solid #f57920;
+        display: grid;
+        place-items: center;
+        backdrop-filter: blur(5px);
+      }
+
+      &:hover .content {
+        backdrop-filter: blur(8px);
+        background-color: #000000a7;
+      }
+
+      &:hover .content p {
+        display: block;
+      }
+
+      &:hover .p-link {
+        background-color: #f57920;
+        color: #fff;
+      }
+    }
+
+    .p-card::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: block;
+      background-image: radial-gradient(#f5792000, #f579202b, #f579202b);
+    }
+  }
+}
