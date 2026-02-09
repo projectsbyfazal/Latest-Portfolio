@@ -1,6 +1,6 @@
 import Container from '../Container'
 import { FaArrowTrendUp, FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa6'
-import "./footer.css"
+import "./Footer.css"
 import Heading from '../Common/Heading'
 import { useThemeContext } from '../../AppContext'
 
