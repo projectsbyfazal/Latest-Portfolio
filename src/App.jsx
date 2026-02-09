@@ -10,12 +10,12 @@ import Services from './components/Services/Services'
 import SkillsTools from './components/SkillsTools/SkillsTools'
 import './styles/global.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AnimatedCursor from "react-animated-cursor"
+// import AnimatedCursor from "react-animated-cursor"
 
 function App() {
   return (
     <>
-      <AnimatedCursor
+      {/* <AnimatedCursor
         innerSize={15}
         outerSize={10}
         color='245, 121, 32'
@@ -35,7 +35,7 @@ function App() {
           'button',
           '.link'
         ]}
-      />
+      /> */}
 
       <Navbar />
       <Hero />
