@@ -3,6 +3,8 @@ import Container from '../Container'
 import Heading from '../Common/Heading'
 import { FaEnvelope } from 'react-icons/fa'
 import { useThemeContext } from "../../AppContext"
+// "react": "^19.1.0",
+    // "react-dom": "^19.1.0",
 
 const Contact = () => {
     const { isDarkMode } = useThemeContext();
