@@ -57,3 +57,110 @@
     }
   }
 }
+
+
+/* ================================= */
+/* HERO RESPONSIVE — PROPER SCOPING */
+/* ================================= */
+
+@media (max-width: 992px) {
+  .hero-section {
+    height: auto;
+    overflow: visible;
+
+    .hero-heading {
+      width: 90%;
+
+      h1 {
+        font-size: 44px;
+        line-height: 50px;
+      }
+    }
+
+    .introduction {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin-top: 30px;
+
+      > div {
+        width: 100%;
+        max-width: 420px;
+        text-align: center;
+      }
+
+      > section {
+        width: 100%;
+        transform: none;
+      }
+
+      .hero-image {
+        width: 55%;
+        margin: 0 auto;
+        transform: none;
+
+        img {
+          width: 85%;
+          transform: translateY(-15%);
+        }
+      }
+
+      /* ⭐ EXPERIENCE BLOCK CENTER FIX */
+      .text-end {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
+
+/* ------------ MOBILE ------------ */
+@media (max-width: 767px) {
+  .hero-section {
+    padding-bottom: 50px;
+    .hero-heading {
+      width: 90%;
+
+      > span {
+        font-size: 14px;
+        padding: 5px 14px;
+      }
+
+      h1 {
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+
+    .introduction {
+      gap: 28px;
+
+      > div p {
+        font-size: 16px;
+      }
+
+      > div h3 {
+        font-size: 26px;
+      }
+
+      .hero-image {
+        width: 305px;
+        height: 305px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          transform: translateY(8%);
+        }
+      }
+
+      /* ⭐ KEEP EXPERIENCE PERFECTLY CENTERED */
+      .text-end {
+        text-align: center;
+        align-items: center;
+      }
+    }
+  }
+}

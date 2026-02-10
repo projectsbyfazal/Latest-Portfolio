@@ -72,6 +72,11 @@
   .container-box {
     padding: 0 20px;
   }
+  .main-heading {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
   .heading1 {
     font-size: 50px;
     letter-spacing: -0.02em;
@@ -88,7 +93,7 @@
   }
 }
 
-.button{
+.button {
   padding: 12px 25px;
   text-decoration: none;
   display: inline-flex;
@@ -101,7 +106,7 @@
   background-color: #f57920;
   border: none;
 }
-.button:hover{
+.button:hover {
   background-color: #feb273;
 }
 /* -======================================== */
@@ -132,8 +137,7 @@
   width: 100%;
 }
 
-
 /* Dark Mode Colors */
-.bg-lightdark-orange{
+.bg-lightdark-orange {
   background-color: #8f511f !important;
 }

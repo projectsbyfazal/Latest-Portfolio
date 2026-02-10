@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <div className={`footer ${isDarkMode && 'bg-dark-footer'}`}>
             <Container className='footer-container'>
-                <div className='upper d-flex align-items-center justify-content-between py-5 border-bottom border-secondary'>
+                <div className='upper d-md-flex align-items-center justify-content-between text-md-start text-center py-5 border-bottom border-secondary'>
                     <Heading text={"Lets Connect"} subText={"there.."} color='#fff' />
 
                     <div>

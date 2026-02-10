@@ -70,3 +70,109 @@
   background-image: radial-gradient(#212529, #212529, #212529),
     url("https://quomodosoft.com/html/glint/assets/img/bg/world-map.svg");
 }
+
+
+
+/* ========================================= */
+/* HIRE SECTION — MOBILE-FIRST REDESIGN */
+/* Desktop remains unchanged */
+/* ========================================= */
+
+@media (max-width: 992px) {
+  .hire-section {
+
+    /* -------- EXPERIENCE LIST -------- */
+    .experience {
+      border-bottom: none;
+    }
+
+    .work-experience {
+      display: block;
+      margin-bottom: 40px;
+      padding: 24px 20px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(6px);
+      text-align: center;
+      position: relative;
+    }
+
+    /* Remove desktop grid & spacing */
+    .work-experience {
+      grid-template-columns: unset;
+    }
+
+    .work-experience div {
+      padding: 0;
+    }
+
+    .work-experience div:first-child,
+    .work-experience div:last-child {
+      padding: 0;
+      border: none;
+    }
+
+    /* -------- DOT AS HEADER ACCENT -------- */
+    .work-experience div:first-child::after {
+      position: static;
+      display: block;
+      margin: 16px auto 10px;
+    }
+
+    .work-experience:last-child div:last-child::after {
+      display: none;
+    }
+
+    /* -------- TEXT HIERARCHY -------- */
+    .work-experience h4 {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .work-experience .paragraph {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .work-experience p.fs-5 {
+      font-size: 14px !important;
+      margin-bottom: 12px;
+    }
+
+    /* -------- ABOUT SECTION -------- */
+    #about {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    #about .row {
+      row-gap: 40px;
+    }
+
+    /* -------- IMAGE -------- */
+    .hire-image {
+      height: 350px;
+      margin: 0 auto;
+      border-radius: 20px;
+      img{
+        position: static !important;
+      }
+    }
+
+    /* -------- STATS -------- */
+    #about .col-md-6 .row {
+      justify-content: center;
+    }
+
+    #about .col-md-6 .row > div {
+      margin-bottom: 20px;
+    }
+
+    /* -------- BUTTON -------- */
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+}

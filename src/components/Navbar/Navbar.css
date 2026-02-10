@@ -55,3 +55,80 @@
     }
   }
 }
+
+
+/* ===================== */
+/* HAMBURGER ICON */
+/* ===================== */
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===================== */
+/* MOBILE MENU */
+/* ===================== */
+
+.mobile-menu {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  background-color: #171717;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.mobile-menu a {
+  padding: 12px;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  background-color: #313131;
+}
+
+/* OPEN STATE */
+.mobile-menu.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ===================== */
+/* RESPONSIVE BREAKPOINT */
+/* ===================== */
+
+@media (max-width: 992px) {
+
+  .mobile-hide {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .my-navbar {
+    position: relative;
+    padding: 10px 20px;
+  }
+}
+

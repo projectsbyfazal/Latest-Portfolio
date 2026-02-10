@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaLinkedin, FaLocationPin, FaEnvelope, FaPhone, FaQuoteLeft } from 'react-icons/fa6'
+import { FaQuoteLeft } from 'react-icons/fa6'
 import "./Hero.css";
 import { FaStar } from 'react-icons/fa';
 import myImage from "../../assets/Images/yasir_khan.png";

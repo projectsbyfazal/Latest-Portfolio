@@ -112,3 +112,96 @@
     }
   }
 }
+
+
+
+/* ========================================= */
+/* PORTFOLIO — MOBILE REDESIGN (DESKTOP SAFE) */
+/* ========================================= */
+
+@media (max-width: 992px) {
+  .portfolio-section {
+
+    /* ---------- TABS ---------- */
+    .p-tabs {
+      justify-content: flex-start;
+      overflow-x: auto;
+      padding: 5px 10px;
+      gap: 10px;
+      scrollbar-width: none;
+    }
+
+    .p-tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .p-tab-item {
+      white-space: nowrap;
+      font-size: 14px;
+      padding: 6px 16px;
+    }
+
+    /* ---------- CARDS GRID ---------- */
+    .p-cards {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    /* ---------- CARD ---------- */
+    .p-card {
+      height: auto;
+      border-radius: 18px;
+    }
+
+    .p-card img {
+      height: 200px;
+    }
+
+    /* ---------- CONTENT (ALWAYS VISIBLE) ---------- */
+    .p-card .content {
+      position: static;
+      width: 100%;
+      background-color: #000;
+      backdrop-filter: none;
+      border-radius: 0 0 18px 18px;
+      padding: 14px 16px;
+    }
+
+    .p-card .content h4 {
+      font-size: 22px !important;
+      margin-bottom: 6px;
+    }
+
+    .p-card .content p {
+      display: block;
+      font-size: 13px;
+      line-height: 20px;
+      opacity: 0.85;
+    }
+
+    /* ---------- LINK BUTTON ---------- */
+    .p-card .p-link {
+      top: 12px;
+      right: 12px;
+      width: 44px;
+      height: 44px;
+      font-size: 18px;
+      background-color: #00000099;
+    }
+
+    /* ---------- DISABLE HOVER DEPENDENCY ---------- */
+    .p-card:hover .content {
+      background-color: #000;
+    }
+
+    .p-card:hover .p-link {
+      background-color: #00000099;
+      color: #f57920;
+    }
+
+    /* ---------- REMOVE DECORATIVE OVERLAY ---------- */
+    .p-card::before {
+      display: none;
+    }
+  }
+}

@@ -165,7 +165,7 @@ const Portfolio = () => {
 
     return (
         <Container className={`py-5 portfolio-section ${isDarkMode && 'bg-dark'}`}>
-            <div className='py-md-4' id='projects'>
+            <div className='py-4' id='projects'>
                 <div className='text-center'>
                     <Heading text={"Some of"} subText={"My Work"} color={`${isDarkMode ? '#fff' : '#333'}`} />
                 </div>

@@ -53,13 +53,13 @@ const HireMe = () => {
                 }
             </div>
 
-            <div id='about' className='row justify-content-around align-items-center py-md-5'>
+            <div id='about' className='row justify-content-around align-items-center py-5'>
                 <div className="col-md-4">
                     <div className={`hire-image position-relative ${isDarkMode && 'bg-lightdark-orange'}`}>
                         <img src={MyImage} className='img-fluid position-absolute left-0 bottom-0' alt="" />
                     </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 mt-md-0 mt-5">
                     <div>
                         <Heading text={"Why"} subText={"Hire Me?"} color={`${isDarkMode ? '#fff' : '#333'}`} />
                         <div className={`paragraph text-${isDarkMode ? 'light' : 'dark'} mt-2`}>
