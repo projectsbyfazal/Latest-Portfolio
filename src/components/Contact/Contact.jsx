@@ -15,11 +15,11 @@ const Contact = () => {
 
                 <div className="col-md-6">
                     <div className='text-center'>
-                        <div className="lh-sm">
+                        <div className="lh-sm" data-aos="fade-left">
                             <Heading text={"Have an Awesome Project Idea?"} subText={"Let’s Discuss."} color={`${isDarkMode ? '#fff' : '#333'}`} />
                         </div>
 
-                        <div className='mt-4'>
+                        <div className='mt-4' data-aos="fade-right">
                             <div className={`contact-input ${isDarkMode && 'bg-dark-contact-input'} shadow-sm`}>
                                 <div className={`envelope ${isDarkMode && 'bg-black'}`}><FaEnvelope /></div>
                                 <div className="input">

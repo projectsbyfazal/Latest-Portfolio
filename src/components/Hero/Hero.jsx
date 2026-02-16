@@ -23,26 +23,26 @@ const Hero = () => {
     return (
         <Container className={`${isDarkMode && 'bg-dark'}`}>
             <div className={`hero-section pt-4 ${isDarkMode && 'text-light'}`}>
-                <div className='hero-heading'>
+                <div className='hero-heading' data-aos="fade-up">
                     <span>Hello</span>
                     <h1>I'm <span>Yasir Khan</span>, <br /> Frontend Engineer</h1>
                 </div>
 
-                <div className='introduction'>
-                    <div className={` ${isDarkMode && 'text-light'}`}>
+                <div className='introduction' > 
+                    <div className={` ${isDarkMode && 'text-light'}`} data-aos="fade-right">
                         <FaQuoteLeft className='fs-1 mb-2' />
                         <p>
                             Turning ideas into responsive web experiences. Highly Recommended
                         </p>
                     </div>
 
-                    <section className='position-relative text-center'>
+                    <section className='position-relative text-center' data-aos="fade-down">
                         <div className={`hero-image ${isDarkMode && 'bg-lightdark-orange'}`}>
                             <img src={myImage} alt="" />
                         </div>
                     </section>
 
-                    <div className={`text-end  ${isDarkMode && 'text-light'}`}>
+                    <div className={`text-end  ${isDarkMode && 'text-light'}`} data-aos="fade-left">
                         <div className='text-warning'>
                             <span> <FaStar /> </span>
                             <span> <FaStar /> </span>

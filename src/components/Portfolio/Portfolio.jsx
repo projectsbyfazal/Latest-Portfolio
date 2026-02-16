@@ -20,6 +20,7 @@ import static_5 from "../../assets/Images/static/static_5.png"
 import static_6 from "../../assets/Images/static/static_6.png"
 import static_7 from "../../assets/Images/static/static_7.png"
 import static_8 from "../../assets/Images/static/static_8.png"
+import static_9 from "../../assets/Images/static/static_9.png"
 
 import dashboard_1 from "../../assets/Images/dashboard/dashboard_1.png"
 
@@ -117,6 +118,13 @@ const projects = [
         link: "https://ztpl.net/rhcare/",
         description: ""
     },
+     {
+        project_title: "Mccoy USA",
+        image: static_9,
+        type: 2,
+        link: "https://ztpl.net/rhcare/",
+        description: ""
+    },
     {
         project_title: "Business Website",
         image: static_3,
@@ -154,7 +162,7 @@ const Portfolio = () => {
     const { isDarkMode } = useThemeContext();
 
     const [currentItems, setCurrentItems] = useState([]);
-    const [type, setType] = useState(1);
+    const [type, setType] = useState(2);
 
     useEffect(() => {
         if (type !== 0)
@@ -166,11 +174,11 @@ const Portfolio = () => {
     return (
         <Container className={`py-5 portfolio-section ${isDarkMode && 'bg-dark'}`}>
             <div className='py-4' id='projects'>
-                <div className='text-center'>
+                <div className='text-center' data-aos="fade-down">
                     <Heading text={"Some of"} subText={"My Work"} color={`${isDarkMode ? '#fff' : '#333'}`} />
                 </div>
 
-                <div className='p-tabs mt-4'>
+                <div className='p-tabs mt-4' data-aos="fade-left">
                     {
                         tabs.map((tab, index) => (
                             <div key={tab} onClick={() => setType(index)} className={`p-tab-item ${isDarkMode && 'dark-p-tab-item'} ${type === index && 'active'} `}>{tab}</div>

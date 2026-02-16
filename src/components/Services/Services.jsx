@@ -27,7 +27,7 @@ const Services = () => {
             <Container className='service-section py-5'>
                 <div className='d-md-flex align-items-center justify-content-between s-heading mb-5 mt-4'>
                     <Heading text={"My"} subText={"Services"} color='#fff' />
-                    <div className='paragraph'>
+                    <div className='paragraph'  data-aos="fade-left">
                         I build modern, responsive, and easy-to-use websites that help businesses and individuals grow online.
                     </div>
                 </div>

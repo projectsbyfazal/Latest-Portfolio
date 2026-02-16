@@ -31,13 +31,13 @@ const HireMe = () => {
     return (
         <Container className={`hire-section ${isDarkMode && 'bg-dark-hire-section'} py-5`}>
             <div className='mb-3 px-md-5 experience'>
-                <div className={`text-center mb-5 mt-md-4`}>
+                <div className={`text-center mb-5 mt-md-4`}  data-aos="fade-up">
                     <Heading text={"My"} subText={"Work Experience"} color={`${isDarkMode ? '#fff' : '#333'}`} />
                 </div>
 
                 {
                     experiences.map(exp => (
-                        <div className='work-experience' key={exp.company}>
+                        <div className='work-experience'  data-aos="fade-up" key={exp.company}>
                             <div >
                                 <h4 className={`mb-1 fw-semibold text-${isDarkMode ? 'white' : 'dark'}`}>{exp.company}</h4>
                                 <p className='paragraph fs-5 text-secondary mb-0'> {exp.duration} </p>
@@ -54,13 +54,13 @@ const HireMe = () => {
             </div>
 
             <div id='about' className='row justify-content-around align-items-center py-5'>
-                <div className="col-md-4">
+                <div className="col-md-4 d-md-block d-none">
                     <div className={`hire-image position-relative ${isDarkMode && 'bg-lightdark-orange'}`}>
                         <img src={MyImage} className='img-fluid position-absolute left-0 bottom-0' alt="" />
                     </div>
                 </div>
-                <div className="col-md-6 mt-md-0 mt-5">
-                    <div>
+                <div className="col-md-6">
+                    <div data-aos="fade-right">
                         <Heading text={"Why"} subText={"Hire Me?"} color={`${isDarkMode ? '#fff' : '#333'}`} />
                         <div className={`paragraph text-${isDarkMode ? 'light' : 'dark'} mt-2`}>
                             I have worked on 20+ projects, including websites, dashboards, and web applications. I understand how to turn designs into working products, fix UI issues efficiently, and improve performance. I communicate clearly, meet deadlines, and always aim to deliver quality work.
