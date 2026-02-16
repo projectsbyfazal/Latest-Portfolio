@@ -122,7 +122,7 @@ const projects = [
         project_title: "Mccoy USA",
         image: static_9,
         type: 2,
-        link: "https://ztpl.net/rhcare/",
+        link: "https://www.mccoy-usa.com/",
         description: ""
     },
     {
