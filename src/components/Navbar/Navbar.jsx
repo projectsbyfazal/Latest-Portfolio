@@ -43,17 +43,17 @@ const Navbar = () => {
                 <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                     {menuOpen ? <HiX /> : <HiMenuAlt3 />}
                 </div>
+                {/* MOBILE MENU */}
+                <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+                    <a href="#" onClick={() => setMenuOpen(false)}>Home</a>
+                    <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+                    <a href="#service" onClick={() => setMenuOpen(false)}>Service</a>
+                    <a href={resume} download onClick={() => setMenuOpen(false)}>Resume</a>
+                    <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
+                    <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+                </div>
             </div>
 
-            {/* MOBILE MENU */}
-            <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
-                <a href="#" onClick={() => setMenuOpen(false)}>Home</a>
-                <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-                <a href="#service" onClick={() => setMenuOpen(false)}>Service</a>
-                <a href={resume} download onClick={() => setMenuOpen(false)}>Resume</a>
-                <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
-                <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
-            </div>
         </Container>
     )
 }

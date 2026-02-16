@@ -24,7 +24,6 @@ import static_9 from "../../assets/Images/static/static_9.png"
 
 import dashboard_1 from "../../assets/Images/dashboard/dashboard_1.png"
 
-
 const projects = [
     {
         project_title: "Youtube Clone App",

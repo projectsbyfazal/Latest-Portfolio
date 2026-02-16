@@ -23,7 +23,7 @@ const Hero = () => {
     return (
         <Container className={`${isDarkMode && 'bg-dark'}`}>
             <div className={`hero-section pt-4 ${isDarkMode && 'text-light'}`}>
-                <div className='hero-heading' data-aos="fade-up">
+                <div className='hero-heading mt-md-0 mt-5 pt-md-0 pt-4' data-aos="fade-up">
                     <span>Hello</span>
                     <h1>I'm <span>Yasir Khan</span>, <br /> Frontend Engineer</h1>
                 </div>

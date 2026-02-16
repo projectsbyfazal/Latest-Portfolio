@@ -56,7 +56,6 @@
   }
 }
 
-
 /* ===================== */
 /* HAMBURGER ICON */
 /* ===================== */
@@ -117,7 +116,6 @@
 /* ===================== */
 
 @media (max-width: 992px) {
-
   .mobile-hide {
     display: none !important;
   }
@@ -126,9 +124,16 @@
     display: block;
   }
 
-  .my-navbar {
+  /* .my-navbar {
     position: relative;
+    padding: 10px 20px;
+  } */
+  .my-navbar {
+    position: fixed; /* make it fixed */
+    top: 20px; /* stick to top */
+    left: 5%;
+    width: 90%;
+    z-index: 1000; /* stay above everything */
     padding: 10px 20px;
   }
 }
-
