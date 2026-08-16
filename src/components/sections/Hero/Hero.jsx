@@ -5,6 +5,7 @@ import Container from '../../ui/Container';
 import Button from '../../ui/Button';
 import SocialIcon from '../../ui/SocialIcon';
 import styles from './Hero.module.css';
+import yasirPhoto from "../../../assets/images/yasir-fazal.png"
 
 export default function Hero() {
   const initials = site.name
@@ -82,7 +83,10 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className={styles.frame}>
-            <span className={styles.initials}>{initials}</span>
+            {/* <span className={styles.initials}>
+              {initials}
+              </span> */}
+              <img src={yasirPhoto} />
           </div>
 
           <motion.div

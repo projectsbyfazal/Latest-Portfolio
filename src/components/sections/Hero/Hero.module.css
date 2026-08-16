@@ -172,6 +172,13 @@
   box-shadow: 0 30px 60px -20px var(--accent-soft-2);
 }
 
+.frame img{
+  border-radius: 50%;
+  position: relative;
+  /* z-index: 10; */
+  border: 20px solid var(--bg);
+}
+
 .frame::before {
   content: '';
   position: absolute;
