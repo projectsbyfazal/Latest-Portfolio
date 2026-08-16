@@ -4,6 +4,7 @@ import Container from '../../ui/Container';
 import RevealOnScroll from '../../ui/RevealOnScroll';
 import Counter from '../../ui/Counter';
 import styles from './About.module.css';
+import yasirPhoto from "../../../assets/images/profile-photo.jpg"
 
 const highlights = [
   'Clean, well-structured, reusable code',
@@ -18,10 +19,11 @@ export default function About() {
         <RevealOnScroll direction="right" className={styles.visual}>
           <div className={styles.card}>
             <div className={styles.avatar}>
-              {site.name
+              {/* {site.name
                 .split(' ')
                 .map((p) => p[0])
-                .join('')}
+                .join('')} */}
+                <img src={yasirPhoto}/>
             </div>
             <div>
               <strong>{site.name}</strong>

@@ -26,7 +26,7 @@ import businessImg from '../assets/images/business.png';
 import educationalImg from '../assets/images/educational.png';
 import hospitalImg from '../assets/images/hospital.png';
 import peacockImg from '../assets/images/peacock.png';
-
+import Yasir_Resume from "../assets/images/Yasir_Resume.pdf"
 /**
  * Computes total years of experience since `startDate`, rounded DOWN to the
  * nearest 0.5 — e.g. 3.67 years -> 3.5, 3.0 years -> 3. Keeps the "1+",
@@ -51,7 +51,7 @@ export const site = {
   phone: '+91 9313911094',
   whatsapp: 'Say Hello on WhatsApp',
   location: 'Vadodara, India',
-  resumeUrl: '/resume.pdf',
+  resumeUrl: Yasir_Resume,
   yearsExperience,
   projectsCompleted: 20,
   rating: 5,

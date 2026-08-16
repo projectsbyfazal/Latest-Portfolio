@@ -42,6 +42,11 @@
   background: linear-gradient(135deg, var(--accent-gradient-from), var(--accent-gradient-to));
 }
 
+.avatar img{
+  border-radius: 50%;
+  scale: 0.92;
+}
+
 .card strong {
   display: block;
   font-size: 1.1rem;
